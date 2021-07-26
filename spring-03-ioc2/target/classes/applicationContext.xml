@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+     http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <import resource="beans.xml"/>
+    <!--    &lt;!&ndash;    第一种：下标赋值&ndash;&gt;-->
+    <!--    <bean id="user" class="com.dm.pojo.User">-->
+    <!--        <constructor-arg index="0" value="明神说java"/>-->
+    <!--    </bean>-->
+
+    <!--    &lt;!&ndash;    第二种方式：通过类型创建，不建议使用&ndash;&gt;-->
+    <!--    <bean id="user" class="com.dm.pojo.User">-->
+    <!--        <constructor-arg type="java.lang.String" value="dumin"/>-->
+    <!--    </bean>-->
+
+    <!--    第三种：直接通过参数名设置-->
+    <bean id="user" class="com.dm.pojo.User">
+        <constructor-arg name="name" value="杜明"/>
+    </bean>
+
+    <!--    别名-->
+    <alias name="user" alias="userNew"/>
+
+</beans>
