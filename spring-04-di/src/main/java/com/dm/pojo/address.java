@@ -1,6 +1,7 @@
 package com.dm.pojo;
 
 public class address {
+
   private String address;
 
   public String getAddress() {

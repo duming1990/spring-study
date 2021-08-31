@@ -1,3 +1,4 @@
+import com.dm.pojo.address;
 import com.dm.pojo.student;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -5,8 +6,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MyTest {
   public static void main(String[] args) {
     ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-    student student = (student) context.getBean("student");
-    System.out.println(student.toString());
+    address address = context.getBean("address", address.class);
+    System.out.println(address.toString());
+
+//    student student = (student) context.getBean("student");
+//    System.out.println(student.toString());
     /*
     student{
       name='杜明',

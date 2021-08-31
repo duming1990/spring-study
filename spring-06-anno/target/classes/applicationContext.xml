@@ -7,7 +7,11 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
     <!--指定要扫描的包，这个包下面的注解就会生效-->
-    <context:component-scan base-package="com.dm.pojo"/>
+    <context:component-scan base-package="com.dm"/>
     <context:annotation-config/>
+
+    <!--    <bean id="user" class="com.dm.pojo.User">-->
+    <!--        <property name="name" value="明神"/>-->
+    <!--    </bean>-->
 
 </beans>

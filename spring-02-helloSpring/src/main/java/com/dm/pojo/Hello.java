@@ -1,10 +1,6 @@
 package com.dm.pojo;
 
 public class Hello {
-  @Override
-  public String toString() {
-    return "Hello{" + "str='" + str + '\'' + '}';
-  }
 
   private String str;
 
@@ -14,5 +10,10 @@ public class Hello {
 
   public void setStr(String str) {
     this.str = str;
+  }
+
+  @Override
+  public String toString() {
+    return "Hello{" + "str='" + str + '\'' + '}';
   }
 }

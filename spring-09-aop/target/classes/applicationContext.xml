@@ -12,8 +12,8 @@
 
     <!--    方式三-->
     <bean id="annotationPoincut" class="com.dm.diy.AnnotationPoincut"/>
-    <!--    开启注解支持-->
-    <aop:aspectj-autoproxy/>
+    <!--    开启注解支持  jdk(默认 proxy-target-class="false")   cglib(proxy-target-class="true")-->
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
 
     <!--    方式一：使用原生spring API接口-->
     <!--    配置aop-->

@@ -5,7 +5,8 @@
      http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="address" class="com.dm.pojo.address">
-        <property name="address" value="天府之国"/>
+<!--        <property name="address" value="天府之国"/>-->
+        <constructor-arg name="address" value="天府之国"/>
     </bean>
 
     <bean id="student" class="com.dm.pojo.student">
